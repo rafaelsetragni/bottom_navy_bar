@@ -84,8 +84,7 @@ class BottomNavyBar extends StatelessWidget {
             ),
         ],
       ),
-      child: SafeArea(
-        child: Container(
+      child: Container(
           width: double.infinity,
           height: containerHeight,
           padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 8),
@@ -107,8 +106,7 @@ class BottomNavyBar extends StatelessWidget {
               );
             }).toList(),
           ),
-        ),
-      ),
+        )
     );
   }
 }
@@ -163,7 +161,7 @@ class _ItemWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 8),
             child: Row(
               mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 IconTheme(
